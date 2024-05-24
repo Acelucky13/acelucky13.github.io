@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Gomez Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+<body> 
+    <!--Header Section-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo/logo1-removebg.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certificate</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="bi bi-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>IOS Developer</p>
+                <h1>Hi, I'm <span>Miguel</span> Gomez </h1>
+            </div>
+        </div>
+    </div>
+    <!--About Me Section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/image2.jpeg" alt="me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        “I’ve decided to take control of my future, lean into technology, and focus on becoming a front-end software developer, with a particular emphasis on iOS development.”
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>App Development</span><br>Building iOS apps using Swift</li>
+                            <li><span>Other</span><br>C, Python, SQL, JavaScript, CSS, and HTML</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>JudgeUs (Startups)2024’ - Present</span><br>Proficient in Swift, developed iOS apps under mentorship, collaborated on debugging, implemented UI/UX, conducted code reviews, and demonstrated strong problem-solving in a team setting.</li>
+                            <li><span>Aces - Behavioral Therapist</span><br>Implemented behavior plans, assisted with daily activities, addressed sensory needs, and collected data for students' success in a collaborative classroom environment.</li>                          
+                            <li><span>Broadband Technician</span><br>Installed and repaired high-speed data, wireless, and voice services for businesses and residences, handling advanced installations, troubleshooting, and maintenance.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Codepath.org - iOS Development 2024</span><br>Completed comprehensive iOS Development program covering Swift programming, UI basics, networking, local persistence, and interaction with cloud-based APIs, focusing on building engaging UIs and designing user experiences.</li>
+                            <li><span>HarvardX - CS50 Introduction to Programming with Python</span><br>Engaged in Harvard's CS50x, mastering Python fundamentals including functions, variables, conditionals, loops, and file I/O through real-world programming exercises.</li>
+                            <li><span>HarvardX - Computer Science 50(CS50) CS50x</span><br>Enrolled in CS50x, gaining proficiency in algorithms, data structures, web development, and languages such as C, Python, SQL, JavaScript, CSS, and HTML with a focus on problem-solving and software engineering principles.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Certificate-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Certificate</h1>
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>CS50 Certificate</h2>
+                    <p>
+                    </p>
+                    <a href="image/CS50.jpeg" target="_blank">Click to see Certificate</a>
+                </div>
+                
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>IOS Development</h2>
+                    <p>
+                    </p>
+                    <a href="image/CodePathiOS.pdf">Click to see Certificate</a>
+                </div>
+                <!--
+                <div>
+                    <i class="bi bi-code-slash"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Sed nuila nibh, tincidunt sit amet sapien quis, elemtum
+                    </p>
+                    <a href="">learn more</a>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Project</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/wordle.png" alt="">
+                    <div class="layer">
+                        <h3>Wordle</h3>
+                        <p>App that user has to guess the word</p>
+                        <a href="https://github.com/Acelucky13"><i class="bi bi-box-arrow-up-right"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/quiz.png" alt="">
+                    <div class="layer">
+                        <h3>Trivia App</h3>
+                        <p>App that will test your knowledge.</p>
+                        <a href="https://github.com/Acelucky13"><i class="bi bi-box-arrow-up-right"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/tumblr.png" alt="">
+                    <div class="layer">
+                        <h3>Tumblr App</h3>
+                        <p>App that will allow you to share your ideas and picture.</p>
+                        <a href="https://github.com/Acelucky13"><i class="bi bi-box-arrow-up-right"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Acelucky13" class="btn" target="_blank">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bi bi-envelope"></i> mig82gomez@gmail.com</p>
+                    <p><i class="bi bi-telephone"></i> (626)-347-9462 </p>
+                    <p><i class="bi bi-geo-alt"></i> West Covina, CA</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/iosdevmiguelgomez/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Acelucky13" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <a href="image/word Resume 2024SWE.pdf" download class="btn btn2" target="_blank">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea type="textarea" name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Miguel Gomez 2024</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemn = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemn.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemn.style.right = "-200px";
+        }
+    </script>
+
+<script>        
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwsapq8qpTcOQoEuNBeBOdwDrfHhGB-ssJ-QdVtFo9apc90fJBOopirPrkYwOU-Tp5v/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
